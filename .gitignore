@@ -1,0 +1,6 @@
+# Bazel dirs
+bazel-*
+
+# Nuitka generated files
+*.build
+*.dist

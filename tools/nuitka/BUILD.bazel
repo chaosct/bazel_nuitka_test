@@ -1,0 +1,14 @@
+load("@rules_python//python:defs.bzl", "py_binary")
+load("@python_deps//:requirements.bzl", "requirement")
+
+py_binary(
+    name = "nuitka",
+    srcs = ["nuitka_wrapper.py"],
+    main = "nuitka_wrapper.py",
+    visibility = ["//visibility:public"],
+    deps = [
+        requirement("nuitka"),
+        requirement("ordered-set"),
+        requirement("zstandard"),
+    ],
+)

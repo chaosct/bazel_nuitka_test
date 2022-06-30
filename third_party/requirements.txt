@@ -1,0 +1,4 @@
+# Nuitka dependencies
+Nuitka==0.9.1
+ordered-set ~= 4.1.0
+zstandard ~= 0.18.0  # Required on OSX for --onefile mode for compression
